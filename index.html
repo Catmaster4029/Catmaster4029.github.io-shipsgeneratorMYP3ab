@@ -15,7 +15,7 @@
 <fieldset>
   <legend>Options</legend>
   <div>
-    <input type="checkbox" id="coding" name="interest" value="Professor" />
+    <input type="checkbox" id="coding" name="interest" value="Professor" checked/>
     <label for="coding">Professor Toggle</label>
   </div>
   <div>
@@ -48,7 +48,7 @@
       }
 
       function generate(){
-        if Professor = true {
+        if Professor = checked {
         let content = [
           strings.genericopeners.random() + " " + strings.items.random() + " " + strings.comparisons.random() + " " + strings.items.random() + ". " ];
         let nickname = "― " + strings.nicknames.random();
