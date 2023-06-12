@@ -12,10 +12,17 @@
      <i> <p id="author"> - catmaster4029 </p> </i>
      <button type="button" id="generatebutton" onclick="generate()">Generate</button> <button onclick="copytocb()">Copy</button>
     <br>
-     <input type="checkbox" id="proffessortoggle" name="toggle professors" checked> <p> toggle professors </p>
-    <br>
-     <input type="checkbox" id="celebritytoggle" name="toggle celebrities" checked> <p> toggle celebrities </p>
-     <br> <br> <br> <br> <br> <br>
+<fieldset>
+  <legend>Options</legend>
+  <div>
+    <input type="checkbox" id="coding" name="interest" value="Professor" />
+    <label for="coding">Professor Toggle</label>
+  </div>
+  <div>
+    <input type="checkbox" id="music" name="interest" value="Celebrity" />
+    <label for="music">Celebrity Toggle</label>
+  </div>
+</fieldset>
 
     <script>
       Array.prototype.random = function () {
@@ -41,7 +48,7 @@
       }
 
       function generate(){
-        if proffessortoggle = true {
+        if Professor = true {
         let content = [
           strings.genericopeners.random() + " " + strings.items.random() + " " + strings.comparisons.random() + " " + strings.items.random() + ". " ];
         let nickname = "― " + strings.nicknames.random();
